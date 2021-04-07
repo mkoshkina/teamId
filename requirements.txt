@@ -1,0 +1,10 @@
+matplotlib==3.1.1
+numpy==1.17.2
+sacred==0.8.1
+Keras==2.3.1
+joblib==0.13.2
+torchvision==0.7.0
+imgaug==0.4.0
+torch==1.6.0
+opencv_python==4.1.2.30
+scikit_learn==0.23.2
