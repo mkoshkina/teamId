@@ -7,19 +7,19 @@ This repository provides code for our paper Contrastive Learning for Sports Vide
 If you use this code or the dataset please cite - bibtex coming soon
 
 ## Setup
-* Clone this repository.
+Clone this repository.
 ```
 git clone https://github.com/mkoshkina/teamId
 cd teamId
 ```
 
-* Code has been written and test on Python 3.7.  Install dependencies by running:
+Code has been written and test on Python 3.7.  Install dependencies by running:
 
 `pip3 install -r requirements.txt`
 
-* Download and unzip data into `data` directory (download link coming soon). Our player classification code runs on player images segmented out from original video frames. Both frames and player images are included in the dataset.
+Download and unzip data into `data` directory (download link coming soon). Our player classification code runs on player images segmented out from original video frames. Both frames and player images are included in the dataset.
 
-* Download pre-trained models into `trained_models` directory (download link coming soon)
+Download pre-trained models into `trained_models` directory (download link coming soon)
 
 ## Usage
 To run evaluation of player clustering based on embedding features run:
@@ -49,10 +49,10 @@ Refer to the paper for detailed method description.
 	`python referee_classifier.py --save`
 	
 * Using players_only images to train embedding network (and autoencoder for comparison):
-```
-python embedding_network.py	
-python autoencoder.py
-```
+
+	`python embedding_network.py`	
+	`python autoencoder.py`
+
 	
 * Run experiments using embedding network, histogram, bag of colors, or autoencoder features:
 
