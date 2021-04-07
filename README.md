@@ -8,9 +8,10 @@ If you use this code or the dataset please cite - bibtex coming soon
 
 ## Setup
 * Clone this repository.
-
-    git clone https://github.com/mkoshkina/teamId
-    cd teamId
+```
+git clone https://github.com/mkoshkina/teamId
+cd teamId
+```
 
 * Code has been written and test on Python 3.7.  Install dependencies by running:
 
@@ -30,20 +31,15 @@ Refer to the paper for detailed method description.
 
 
 ## Code Organization
-models.py - models for referee classifier, embedding network, autoencoder
-
-embedding_network.py - training code for embedding network
-
-referee_classifier.py - training and test for referee classifier
-
-autoencoder.py - training for autoencoder
-
-dataloader.py, utils.py - helper methods and constants
-
-test_with_players_only.py - test player clustering using diffrerent features 
+* models.py - models for referee classifier, embedding network, autoencoder
+* embedding_network.py - training code for embedding network
+* referee_classifier.py - training and test for referee classifier
+* autoencoder.py - training for autoencoder
+* dataloader.py, utils.py - helper methods and constants
+* test_with_players_only.py - test player clustering using diffrerent features 
 
 
-## Full Workflow :
+## Full Workflow
 * Train referee classifier on the ground truth labels:
 
 	`python referee_classifer.py`
@@ -53,9 +49,10 @@ test_with_players_only.py - test player clustering using diffrerent features
 	`python referee_classifier.py --save`
 	
 * Using players_only images to train embedding network (and autoencoder for comparison):
-
-    python embedding_network.py	
-    python autoencoder.py
+```
+python embedding_network.py	
+python autoencoder.py
+```
 	
 * Run experiments using embedding network, histogram, bag of colors, or autoencoder features:
 
