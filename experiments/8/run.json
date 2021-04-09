@@ -37,7 +37,7 @@
       ]
     ]
   },
-  "heartbeat": "2021-04-09T19:07:48.208078",
+  "heartbeat": "2021-04-09T19:08:21.045593",
   "host": {
     "ENV": {},
     "cpu": "Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz",
@@ -91,5 +91,6 @@
   "resources": [],
   "result": null,
   "start_time": "2021-04-09T19:06:08.188439",
-  "status": "RUNNING"
+  "status": "COMPLETED",
+  "stop_time": "2021-04-09T19:08:21.043646"
 }
