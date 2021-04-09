@@ -187,6 +187,7 @@ def main(method, model_name, model_version, save_bbox_labels, frames_train_size,
     #Evaluate method for all test games
     for j, game in enumerate(utils.test_games):
         model_path = utils.trained_models_dir+model_name+model_version+'.pth'  
+        print(model_path)
         if (method == 'net'):
             model = utils.load_model_embed(model_path)
         elif (method=='ae'):

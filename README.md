@@ -35,7 +35,7 @@ Refer to the paper for detailed method description.
 * embedding_network.py - training code for embedding network
 * referee_classifier.py - training and test for referee classifier
 * autoencoder.py - training for autoencoder
-* dataloader.py, utils.py - helper methods and constants
+* dataloader.py, utils.py - helper methods and constants; dataset split into train and test is defined in utils.py
 * test_with_players_only.py - test player clustering using diffrerent features 
 
 

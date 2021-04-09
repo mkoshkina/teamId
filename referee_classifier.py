@@ -49,11 +49,11 @@ def get_files(path):
 #read max 8000 images for game
 def read_all_imgs(game):
     X = []
-    img_folder = utils.data_dir + game+ utils.images_sub_dir     
+    img_folder = 'data/'+game+'/masked_imgs'       
     img_file_paths = get_files(img_folder)
     
-    if (len(img_file_paths) > 8000):
-        img_file_paths = img_file_paths[:8000]
+#    if (len(img_file_paths) > 8000):
+#        img_file_paths = img_file_paths[:8000]
     
     for f in img_file_paths:
         image = utils.read_and_process(f)
@@ -65,7 +65,7 @@ def read_all_imgs(game):
 # read ground truth annotated images and labels for game
 def read_annotated_imgs(game, augment=False):    
     #read ground truth 
-    f_gt = utils.get_gt_file (game)
+    f_gt = open('data/'+ game+'/gt.txt', 'r')
     gt = f_gt.readlines()
     
     y = []
@@ -81,7 +81,7 @@ def read_annotated_imgs(game, augment=False):
         else:
             label = 0
 
-        name = utils.data_dir+ game+utils.images_sub_dir + name
+        name = 'data/'+ game+'/masked_imgs/' + name
         image = utils.read_and_process(name)
         image = np.array(image)
         X.append(image)
@@ -324,7 +324,7 @@ def test_classification(model, game, prec_recall_curve = False):
 
 def get_model (suffix, model_name = ''):
     if model_name == '':
-        model_name = utils.trained_models_dir + 'referee_classifier_segments_'+suffix+'.pth' 
+        model_name = 'trained_models/referee_classifier_segments_'+suffix+'.pth' 
     model = ConvClassifier()
     
     if isCuda:   
@@ -341,7 +341,7 @@ def get_players_only_list (game, suffix, model_name='', save = False, file_name 
     new_X = []
     if save:
         if file_name == '':
-            file_name = utils.data_dir+game+ utils.players_only_file
+            file_name = 'data/'+game+ '/players_only.txt'
         results_file = open(file_name, 'w')
     X, file_names = read_all_imgs(game)
     if model_name == '':
@@ -365,6 +365,15 @@ def get_players_only_list (game, suffix, model_name='', save = False, file_name 
             
     return new_X
 
+def get_sorted_players_only_list  (game, suffix, model_name='', save = False, file_name = '', threshold = THRESHOLD):
+    new_X = []
+    filenames = []
+    if save:
+        if file_name == '':
+            file_name = 'results/players_only_'+suffix+'.txt'
+        results_file = open(file_name, 'w')
+    return new_X, filenames
+
 ################################## Main ########################################
 
 if __name__== "__main__":    
@@ -374,7 +383,8 @@ if __name__== "__main__":
     all_precisions = []
     all_recalls = []
     games_acc = []
-
+#    for k in range(len(utils.all_games)):
+#        games_acc.append([])
                 
     if len(sys.argv) > 1:
         if (sys.argv[1].strip() == '--test'):
@@ -386,7 +396,7 @@ if __name__== "__main__":
             isTrain = False
       
   
-    model_name = utils.trained_models_dir + 'referee_classifier_segments.pth'        
+    model_name = 'trained_models/referee_classifier_segments.pth'        
     if isTrain:          
         loader, val_loader = load_data_training(utils.train_games, val_games = utils.val_games) 
         train_model(model_name, loader, val_loader)

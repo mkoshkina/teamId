@@ -1,0 +1,104 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/home/maria/teamsproject/teamId",
+    "dependencies": [
+      "ipython==7.8.0",
+      "joblib==0.13.2",
+      "motmetrics==1.2.0",
+      "numpy==1.19.5",
+      "sacred==0.8.1",
+      "scikit-learn==0.21.3",
+      "scipy==1.3.1"
+    ],
+    "mainfile": "test_with_players_only.py",
+    "name": "test_with_players_only",
+    "repositories": [
+      {
+        "commit": "3656110b8977082befa9cf84a04030c005ea1c6e",
+        "dirty": true,
+        "url": "https://github.com/mkoshkina/teamId.git"
+      },
+      {
+        "commit": "3656110b8977082befa9cf84a04030c005ea1c6e",
+        "dirty": true,
+        "url": "https://github.com/mkoshkina/teamId.git"
+      }
+    ],
+    "sources": [
+      [
+        "test_with_players_only.py",
+        "_sources/test_with_players_only_62bc757130ebdb9343ddb7bc04a9911b.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_3eb7f52929986aabe4cadf0c0dcdd96a.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/home/maria/anaconda3/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"/home/maria/teamsproject/teamId/test_with_players_only.py\", line 192, in main\n    model = utils.load_model_embed(model_path)\n",
+    "  File \"/home/maria/teamsproject/teamId/utils.py\", line 50, in load_model_embed\n    model.load_state_dict(torch.load(model_path))\n",
+    "  File \"/home/maria/anaconda3/lib/python3.7/site-packages/torch/serialization.py\", line 571, in load\n    with _open_file_like(f, 'rb') as opened_file:\n",
+    "  File \"/home/maria/anaconda3/lib/python3.7/site-packages/torch/serialization.py\", line 229, in _open_file_like\n    return _open_file(name_or_buffer, mode)\n",
+    "  File \"/home/maria/anaconda3/lib/python3.7/site-packages/torch/serialization.py\", line 210, in __init__\n    super(_open_file, self).__init__(open(name, mode))\n",
+    "FileNotFoundError: [Errno 2] No such file or directory: '../trained_models/embedding.pth'\n"
+  ],
+  "heartbeat": "2021-04-09T16:44:20.346289",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz",
+    "gpus": {
+      "driver_version": "460.32.03",
+      "gpus": [
+        {
+          "model": "GeForce RTX 2080",
+          "persistence_mode": true,
+          "total_memory": 7948
+        }
+      ]
+    },
+    "hostname": "maria-elderlab",
+    "os": [
+      "Linux",
+      "Linux-5.4.0-26-generic-x86_64-with-debian-bullseye-sid"
+    ],
+    "python_version": "3.7.4"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2021-04-09T16:44:20.248080",
+  "status": "FAILED",
+  "stop_time": "2021-04-09T16:44:20.346886"
+}

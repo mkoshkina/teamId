@@ -28,7 +28,7 @@ gt_file_name = '/gt.txt'
 players_only_file = '/players_only.txt'
 prefix=''
 
-trained_models_dir = 'trained_models/'
+trained_models_dir = '../trained_models/'
 
 
 IMAGE_SIZE = (64,128)

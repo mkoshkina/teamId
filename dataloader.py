@@ -64,7 +64,7 @@ def soft_clustering_weights(data, cluster_centres):
     return Weight
 
 # return data for game and high-confidence cluster subsets
-def load_data_helper(game, model, game_imgs, use_hist, threshold = CONF_THRESHOLD):       
+def load_data_helper(game, model, game_imgs, use_hist, threshold = ):       
     if use_hist:
         features = utils.get_hist_features(game_imgs)
     else:
@@ -77,8 +77,8 @@ def load_data_helper(game, model, game_imgs, use_hist, threshold = CONF_THRESHOL
     probs = soft_clustering_weights(np.asarray(features), kmeans.cluster_centers_)
     
     #get a subset with high probability for each cluster
-    indx1 = np.where(probs[:,0] > CONF_THRESHOLD)
-    indx2 = np.where(probs[:,1] > CONF_THRESHOLD) 
+    indx1 = np.where(probs[:,0] > threshold)
+    indx2 = np.where(probs[:,1] > threshold) 
     size_cl1 = len(indx1[0])
     size_cl2 = len(indx2[0])
     

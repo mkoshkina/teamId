@@ -41,7 +41,7 @@ def config():
     pixel_number = 400000
     use_learned_bag = False # use vocabulary learned on other games
     
-    frames_train_size = 512
+    frames_train_size = 8
     #number of frames to use for learning clustering
     #[1,2,4,8,16,32,64,128, 256, 512]
     

@@ -1,0 +1,96 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/home/maria/teamsproject/teamId",
+    "dependencies": [
+      "ipython==7.8.0",
+      "joblib==0.13.2",
+      "motmetrics==1.2.0",
+      "numpy==1.19.5",
+      "sacred==0.8.1",
+      "scikit-learn==0.21.3",
+      "scipy==1.3.1"
+    ],
+    "mainfile": "test_with_players_only.py",
+    "name": "test_with_players_only",
+    "repositories": [
+      {
+        "commit": "3656110b8977082befa9cf84a04030c005ea1c6e",
+        "dirty": true,
+        "url": "https://github.com/mkoshkina/teamId.git"
+      },
+      {
+        "commit": "3656110b8977082befa9cf84a04030c005ea1c6e",
+        "dirty": true,
+        "url": "https://github.com/mkoshkina/teamId.git"
+      }
+    ],
+    "sources": [
+      [
+        "test_with_players_only.py",
+        "_sources/test_with_players_only_62bc757130ebdb9343ddb7bc04a9911b.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_e52e93390266804223c87202229bac62.py"
+      ]
+    ]
+  },
+  "heartbeat": "2021-04-09T16:47:16.931372",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz",
+    "gpus": {
+      "driver_version": "460.32.03",
+      "gpus": [
+        {
+          "model": "GeForce RTX 2080",
+          "persistence_mode": true,
+          "total_memory": 7948
+        }
+      ]
+    },
+    "hostname": "maria-elderlab",
+    "os": [
+      "Linux",
+      "Linux-5.4.0-26-generic-x86_64-with-debian-bullseye-sid"
+    ],
+    "python_version": "3.7.4"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "method=ae"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2021-04-09T16:46:43.289662",
+  "status": "COMPLETED",
+  "stop_time": "2021-04-09T16:47:16.929674"
+}
