@@ -1,1 +1,75 @@
-Project Page
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Unsupervised Player Classification</title>
+		<link href="page.css" rel="stylesheet" type="text/css">
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+	</head>
+
+	<body>
+		<h1 >Contrastive Learning for Sports Video:  Unsupervised Player Classification</h1>
+		<div class='workflow'>
+			<img src='images/workflow.png' width=90%>
+		</div>
+
+		<div class='section'>
+		We address the problem of unsupervised classification of players in a team sport according to their team affiliation, when jersey colours and design are not known a priori.
+We adopt a contrastive learning approach in which an embedding network learns to maximize the distance between representations of players on different teams relative to players on the same team, in a purely unsupervised fashion, without any labelled data. We evaluate the approach using a new hockey dataset and find that it outperforms prior unsupervised approaches by a substantial margin, particularly for real-time application when only a small number of frames are available for unsupervised learning before team assignments must be made.  Remarkably, we show that our contrastive method achieves 94% accuracy after unsupervised training on only a single frame, with accuracy rising to 97% within 500 frames (17 seconds of game time).  We further demonstrate how accurate team classification allows accurate team-conditional heat maps of player positioning to be computed.  
+		</div>
+		
+		<h2>Authors</h2>
+		<div class='section'>
+			<div class='author' style="cursor: pointer;" onclick="window.location='https://mkoshkina.github.io/';">
+				<div><image class='author-img' src='images/maria.jpg'></div>
+				<div>Maria Koshkina</div>
+			</div>
+			<div class='author' style="cursor: pointer;" onclick="window.location='https://www.elderlab.yorku.ca/people/';">
+				<div><image class='author-img' src='images/hemanth.jpg'></div>
+				<div>Hemanth Pidaparthy</div>
+			</div>
+			<div class='author' style="cursor: pointer;" onclick="window.location='https://www.elderlab.yorku.ca/jelder/';">
+				<div><image class='author-img' src='images/james.jpg'></div>
+				<div>James Elder</div>
+			</div>
+		</div>
+
+		<!--<h2>Hockey Dataset</h2>
+		<div class='section'> Coming soon </div> -->
+		
+		<h2>Resources</h2>
+		<div class='section'>
+			<div class='resource' style="cursor: pointer;" onclick="window.location='https://github.com/mkoshkina/teamId';">
+				<div><image class='resource-img' src='images/github.png'></div>
+				<div>Code</div>
+			</div>
+			<div class='resource' style="cursor: pointer;" onclick="window.location='https://arxiv.org/abs/2104.10068';">
+				<div><image class='resource-img' src='images/paper.png'></div>
+				<div>Paper</div>
+			</div>
+		</div>
+
+		<!--<h2 >Citation</h2>
+		<div>
+			
+		</div>-->
+
+		<h2>Affiliation</h2>
+		<div class='section'>
+			<div class='affiliation' style="cursor: pointer;" onclick="window.location='https://www.elderlab.yorku.ca/jelder/';">
+				<div><image class='affiliation-img' src='images/elder_lab.png'></div>
+			</div>
+			<div class='affiliation' style="cursor: pointer;" onclick="window.location='https://vista.info.yorku.ca/';">
+				<div><image class='affiliation-img' src='images/vista.png'></div>
+			</div>
+			<div class='affiliation' style="cursor: pointer;" onclick="window.location='https://www.yorku.ca/cvr/';">
+				<div><image class='affiliation-img' src='images/cvr.png'></div>
+
+			</div>
+			<div class='affiliation' style="cursor: pointer;" onclick="window.location='http://eecs.lassonde.yorku.ca/';">
+				<div><image class='affiliation-img' src='images/york.png'></div>
+
+			</div>
+		</div>
+	</body>
+</html>
