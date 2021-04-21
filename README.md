@@ -1,7 +1,7 @@
 # Contrastive Learning for Sports Video: Unsupervised Player Classification
-This repository provides code for our paper Contrastive Learning for Sports Video: Unsupervised Player Classification (Maria Koshkina, Hemanth Pidaparthy, James H. Elder).
+This repository provides code for our paper [Contrastive Learning for Sports Video: Unsupervised Player Classification](https://arxiv.org/abs/2104.10068) (Maria Koshkina, Hemanth Pidaparthy, James H. Elder).
 
-![Workflow](workflow.png)
+![Workflow](docs/workflow.png)
 
 ## Publication
 If you use this code or the dataset please cite - bibtex coming soon
