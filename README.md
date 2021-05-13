@@ -4,7 +4,15 @@ This repository provides code for our paper [Contrastive Learning for Sports Vid
 ![Workflow](docs/workflow.png)
 
 ## Publication
-If you use this code or the dataset please cite - bibtex coming soon
+If you use this code or the dataset please cite:
+``` 
+@article{koshkina2021contrastive,
+  title={Contrastive Learning for Sports Video: Unsupervised Player Classification},
+  author={Koshkina, Maria and Pidaparthy, Hemanth and Elder, James H},
+  journal={arXiv preprint arXiv:2104.10068},
+  year={2021}
+}
+```
 
 ## Setup
 Clone this repository.
