@@ -66,3 +66,7 @@ Refer to the paper for detailed method description.
 
 	`python test_with_players_only.py with method=<method_name>` ,
 where method_name is one of `net`, `hist`, `bag`, `ae` 
+
+## License
+[<img src="src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png">](http://creativecommons.org/licenses/by-nc/3.0/)
+This work is licensed under a [Creative Commons Attribution-NonCommercial 3.0 Unported License]("http://creativecommons.org/licenses/by-nc/3.0/").
