@@ -6,10 +6,11 @@ This repository provides code for our paper [Contrastive Learning for Sports Vid
 ## Publication
 If you use this code or the dataset please cite:
 ``` 
-@article{koshkina2021contrastive,
+@inproceedings{koshkina2021contrastive,
   title={Contrastive Learning for Sports Video: Unsupervised Player Classification},
   author={Koshkina, Maria and Pidaparthy, Hemanth and Elder, James H},
-  journal={arXiv preprint arXiv:2104.10068},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4528--4536},
   year={2021}
 }
 ```
@@ -25,9 +26,9 @@ Code has been written and test on Python 3.7.  Install dependencies by running:
 
 `pip3 install -r requirements.txt`
 
-Download and unzip data into `data` directory (download link coming soon). Our player classification code runs on player images segmented out from original video frames. Both frames and player images are included in the dataset.
+Download and unzip data into `data` directory. Our player classification code runs on player images segmented out from original video frames. Dataset will be released soon. To be notified when it becomes available please contact [Maria Koshkina](mailto:koshkina@yorku.ca).
 
-Download pre-trained models into `trained_models` directory (download link coming soon)
+[Download](https://drive.google.com/file/d/1_66meVnGNDDYJpCbWeIcmtweHyLsfr9L/view?usp=sharing) and unzip pre-trained models into `trained_models` directory.
 
 ## Usage
 To run evaluation of player clustering based on embedding features run:
