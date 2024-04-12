@@ -26,7 +26,7 @@ Code has been written and test on Python 3.7.  Install dependencies by running:
 
 `pip3 install -r requirements.txt`
 
-Download and unzip data into `data` directory. Our player classification code runs on player images segmented out from original video frames. Dataset will be released soon. To be notified when it becomes available please contact [Maria Koshkina](mailto:koshkina@yorku.ca).
+Download and unzip data into `data` directory. Our player classification code runs on player images segmented out from original video frames. Dataset is available upon request, contact [Maria Koshkina](mailto:koshkina@yorku.ca).
 
 [Download](https://drive.google.com/file/d/1_66meVnGNDDYJpCbWeIcmtweHyLsfr9L/view?usp=sharing) and unzip pre-trained models into `trained_models` directory.
 
